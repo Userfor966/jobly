@@ -43,7 +43,7 @@ export async function getServerSideProps(context) {
     const { id } = context.params; 
   
     try {
-      const res = await axios.get(`http://localhost:3001/job/${id}`,); // Backend'e isteği gönder
+      const res = await axios.get(`https://admin-9i92.onrender.com/job/${id}`,); // Backend'e isteği gönder
    console.log(res.data)
       return {
         props: { 

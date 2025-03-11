@@ -30,7 +30,7 @@ const router=useRouter()
   setLoading(true)
   
   try {
-      const response = await axios.post("http://localhost:3001/send-otp", payload)
+      const response = await axios.post("https://admin-9i92.onrender.com/send-otp", payload)
   setStep(2)
       setLoading(false)
     } catch (error) {
@@ -51,7 +51,7 @@ const router=useRouter()
   }
   setLoading(true)
   try {
-      const response = await axios.post("http://localhost:3001/register", payload)
+      const response = await axios.post("https://admin-9i92.onrender.com/register", payload)
       toast.success("Hesab uğurla yaradıldı")
       router.push="/authentication/login"
       setLoading(false)

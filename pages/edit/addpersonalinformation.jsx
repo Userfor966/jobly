@@ -21,7 +21,7 @@ export default function AddPersonalInformation(){
             driverLicence:driverLicence
         }
 try{
-const res=await axios.patch("http://localhost:3001/personal-information",payload,{
+const res=await axios.patch("https://admin-9i92.onrender.com/personal-information",payload,{
     withCredentials:true
 })
 console.log(res.data)

@@ -8,7 +8,7 @@ export default function Experience({user,isOwner}){
     const dispatch=useDispatch()
     const deleteExperience=async(id)=>{
         try{
-            const res=await axios.delete(`http://localhost:3001/remove-experience/${id}`,{
+            const res=await axios.delete(`https://admin-9i92.onrender.com/remove-experience/${id}`,{
                 withCredentials:true
             })
            dispatch(fetchUserInfo())

@@ -4,7 +4,7 @@ export const deleteAccount=async(password)=>{
         password:password
     }
     try{
-        const res=await axios.post("http://localhost:3001/delete-account",payload,{
+        const res=await axios.post("https://admin-9i92.onrender.com/delete-account",payload,{
             withCredentials:true
         })
         console.log(res.data)

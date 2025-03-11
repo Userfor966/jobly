@@ -9,7 +9,7 @@ export default function SocailAccounts({user,isOwner}){
     const dispatch=useDispatch()
     const deleteAccount=async(id)=>{
         try{
-            const res=await axios.delete(`http://localhost:3001/remove-account/${id}`,{
+            const res=await axios.delete(`https://admin-9i92.onrender.com/remove-account/${id}`,{
                 withCredentials:true
             })
            dispatch(fetchUserInfo())

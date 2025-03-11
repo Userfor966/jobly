@@ -17,7 +17,7 @@ export default function SummaryForm(){
     }
     setLoading(true)
     try {
-      const response = await axios.patch(`http://localhost:3001/updateinfo`, data,
+      const response = await axios.patch(`https://admin-9i92.onrender.com/updateinfo`, data,
       {
         withCredentials:true,
 }

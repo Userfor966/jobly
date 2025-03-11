@@ -9,7 +9,7 @@ export default function LanguageSkills({user,isOwner}){
     const dispatch=useDispatch()
     const deleteLanguage=async(id)=>{
         try{
-            const res=await axios.delete(`http://localhost:3001/remove-language/${id}`,{
+            const res=await axios.delete(`https://admin-9i92.onrender.com/remove-language/${id}`,{
                 withCredentials:true
             })
            dispatch(fetchUserInfo())

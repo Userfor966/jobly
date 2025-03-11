@@ -41,7 +41,7 @@ console.log(data)
       formData.append("image", image);
     }
     try {
-      const response = await axios.patch(`http://localhost:3001/updateinfo`, formData,
+      const response = await axios.patch(`https://admin-9i92.onrender.com/updateinfo`, formData,
       {
         withCredentials:true,
         headers: {

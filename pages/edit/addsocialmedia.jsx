@@ -15,7 +15,7 @@ export default function SocialMediaForm(){
       url:url
     }
     try{
-const res=await axios.post("http://localhost:3001/add-socialmedia",payload,{
+const res=await axios.post("https://admin-9i92.onrender.com/add-socialmedia",payload,{
   withCredentials:true
 })
 console.log(res.data)

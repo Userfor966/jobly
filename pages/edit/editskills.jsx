@@ -21,7 +21,7 @@ export default function SkillsForm(){
     
         try {
           const response = await axios.post(
-            "http://localhost:3001/add-skill",
+            "https://admin-9i92.onrender.com/add-skill",
             { skills: skillsArray },
             { withCredentials: true }
           );

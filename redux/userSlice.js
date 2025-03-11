@@ -4,7 +4,7 @@ import axios from "axios";
 
 export const fetchUserInfo = createAsyncThunk("user/fetchUserInfo", async () => {
   try {
-    const response = await axios.post("http://localhost:3001/verify-token",
+    const response = await axios.post("https://admin-9i92.onrender.com/verify-token",
     {},
       { withCredentials: true }
     );
