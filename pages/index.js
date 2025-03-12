@@ -9,7 +9,7 @@ export default function Home() {
   const [active,setActive]=useState(1)
   return (
     <div className="min-h-[100vh] relative pt-[90px]">
-   <div className="fixed top-0 left-0 w-full">
+   <div className="fixed top-0 left-0 z-[999] w-full">
    <Header/>
    <ActivePage setActive={setActive} active={active}/>
    </div>

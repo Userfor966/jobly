@@ -10,7 +10,7 @@ export default function UserCard({user,index}){
 <div className="w-full flex flex-col gap-[10px] items-start">
 <h1 className="text-white font-bold truncate text-start w-full">{user.firstName + " " + user.lastName}</h1>
 <span className="text-[#A0A1A3] text-[15px] font-300 truncate">{user.position}</span>
-<span className="text-[#A0A1A3] text-[15px] font-300 truncate">{user.salary + " Azn"}</span>
+{user.salary!=null ? <span className="text-[#A0A1A3] text-[15px] font-300 truncate">{user.salary + " Azn"}</span> : null}
 </div>
         </Link>
     )
