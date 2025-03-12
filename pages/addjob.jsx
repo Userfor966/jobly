@@ -85,7 +85,7 @@ console.log(res.data)
                     onChange={(e) => { setEmail(e.target.value) }}
                 />
                    <Input
-                    placeholder="Əlaqə nömrəsi, (nümunə +99455xxxxxxxx)"
+                    placeholder="Əlaqə nömrəsi (000) 000 00 00"
                     value={phone}
                     type="number"
                     onChange={(e) => { setPhone(e.target.value) }}
@@ -107,15 +107,7 @@ console.log(res.data)
                     type="number"
                     onChange={(e) => { setSalary(e.target.value) }}
                 />
-                <Select 
-                label="Cinsi"
-                items={["Kişi","Qadın","Fərqi yoxdur"]}
-                value={gender}
-                type="text"
-                    onChange={(value) => { setGender(value) }}
-                    />
-    
-                 <Select
+<Select
                     label="Şəhər"
                     items={cities}
                     value={city}
