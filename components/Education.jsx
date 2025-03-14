@@ -8,7 +8,7 @@ export default function Education({user,isOwner}){
     const dispatch=useDispatch()
     const deleteEducation=async(id)=>{
         try{
-            const res=await axios.delete(`https://admin-9i92.onrender.com/remove-education/${id}`,{
+            const res=await axios.delete(`http://localhost:3001/remove-education/${id}`,{
                 withCredentials:true
             })
            dispatch(fetchUserInfo())

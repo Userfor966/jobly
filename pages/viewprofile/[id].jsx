@@ -10,6 +10,7 @@ import LanguageSkills from "@/components/LanguageSkills";
 import SocailAccounts from "@/components/SocialAccounts";
 import Link from "next/link";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import PersonalInformation from "@/components/PersonalInformation";
 export default function ViewProfile({user}){
     return (
 <motion.div 
@@ -27,6 +28,7 @@ export default function ViewProfile({user}){
             </div>
    <div className="flex flex-col items-center gap-[10px] w-full mt-[50px]">
    <About user={user}/>
+   <PersonalInformation user={user}/>
    {!user?.summary || user?.summary?.length === 0 ? null : <Summary user={user} />}
     
    {(user?.education && user.education.length > 0) && <Education user={user} />}

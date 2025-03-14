@@ -26,6 +26,12 @@ export default function PersonalInformation({user,isOwner}){
   {user?.birthDate===undefined ? "Qeyd edilməyib" : user?.birthDate}
   </span>
     </div> 
+    <div className="flex items-center w-full gap-[10px]">
+  <p className="font-bold text-[#E8E9E9]">Təhsil: </p>
+  <span className=" text-[#E8E9E9]">
+  {user?.educationLevel===undefined ? "Qeyd edilməyib" : user?.educationLevel}
+  </span>
+    </div> 
 
     <div className="flex items-center w-full gap-[10px]">
   <p className="font-bold text-[#E8E9E9]">Ailə vəziyyəti: </p>

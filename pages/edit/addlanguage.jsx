@@ -19,7 +19,7 @@ export default function AddLanguage(){
         }
      
         try {
-          const response = await axios.post(`https://admin-9i92.onrender.com/add-language`, language,
+          const response = await axios.post(`http://localhost:3001/add-language`, language,
           {
             withCredentials:true,
         }

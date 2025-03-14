@@ -13,7 +13,7 @@ export default function Switcher() {
     const newValue = event.target.checked; 
    
     try {
-      const res = await axios.patch('https://admin-9i92.onrender.com/updateinfo', { isOpen: newValue }, { withCredentials: true });
+      const res = await axios.patch('http://localhost:3001/updateinfo', { isOpen: newValue }, { withCredentials: true });
       dispatch(closeToWork({newValue:newValue}))
       toast.success(res.data?.message)
     } catch (error) {

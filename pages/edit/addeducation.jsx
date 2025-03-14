@@ -21,7 +21,7 @@ endYear:endYear,
         }
      
         try {
-          const response = await axios.post(`https://admin-9i92.onrender.com/add-education`, education,
+          const response = await axios.post(`http://localhost:3001/add-education`, education,
           {
             withCredentials:true,
         }

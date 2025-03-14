@@ -11,7 +11,7 @@ export default function Skills({user,isOwner}){
     const deleteSkill=async(skill)=>{
         setSkill(skill)
 try{
-    const res=await axios.delete("https://admin-9i92.onrender.com/remove-skill",{
+    const res=await axios.delete("http://localhost:3001/remove-skill",{
     data:{skill},
         withCredentials:true
     })

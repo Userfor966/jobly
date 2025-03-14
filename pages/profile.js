@@ -28,6 +28,7 @@ export default function Profile(){
   
         <div className=" w-full flex flex-col gap-[10px] justify-center items-center pb-[20px] max-[490px]:pb-0">
         <About user={user} isOwner={isOwner}/>
+        <PersonalInformation user={user} isOwner={isOwner}/>
         <Summary user={user} isOwner={isOwner}/>
         <Education user={user} isOwner={isOwner}/>
         <Experience user={user} isOwner={isOwner}/>
